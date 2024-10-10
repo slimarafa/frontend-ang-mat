@@ -1,1 +1,22 @@
-<p>admin-template works!</p>
+<mat-toolbar color="primary">
+    <button mat-icon-button>
+      <mat-icon>menu</mat-icon>
+    </button>
+    <span style="flex:auto;"></span>
+    <button mat-button >Home</button>
+    <button mat-button >Profile</button>
+    <button mat-button [matMenuTriggerFor]="importMenu">
+      <mat-icon iconPositionEnd>keyboard_arrow_down</mat-icon>
+      Import</button>
+    <mat-menu #importMenu>
+      <button mat-menu-item> Load Students
+        <mat-icon>group</mat-icon>
+      </button>
+      <button mat-menu-item> Load Payments
+        <mat-icon>payment</mat-icon>
+      </button>
+    </mat-menu>
+    
+    <button mat-raised-button color="accent">Logout</button>
+  
+  </mat-toolbar>
