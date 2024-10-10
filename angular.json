@@ -37,7 +37,7 @@
               }
             ],
             "styles": [
-              "@angular/material/prebuilt-themes/magenta-violet.css",
+              "@angular/material/prebuilt-themes/indigo-pink.css",  //deeppurple-amber.css indigo-pink.css  azure-blue.css magenta-violet.css",
               "src/styles.css"
             ],
             "scripts": []
