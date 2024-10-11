@@ -16,8 +16,11 @@
             <mat-icon>payment</mat-icon>
         </button>
     </mat-menu>
-
-    <button mat-raised-button color="accent" routerLink="/login">Logout</button>
+    <!--afficher l'utilisateur authentifié -->
+    <button mat-button *ngIf="authService.isAuthenticated">{{authService.username}}</button>
+    <button mat-raised-button color="accent"
+    (click)="logout()" routerLink="/login">
+        Logout</button>
 </mat-toolbar>
 <mat-drawer-container>
 <mat-drawer #myDrawer opened="true" mode="side" position="start">
